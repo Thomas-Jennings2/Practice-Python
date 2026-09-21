@@ -6,10 +6,13 @@ For this particular project, I used Google Colab to test my python code. In orde
 
 from google.colab import files uploaded = files.upload()
 
+
 I then used the following code in order to create a dataframe with this dataset df = pd.read_csv('student_python_task.csv')
 
 # Understand what you have been given
 Before starting any analysis, it is important to first look at the data to see what it involves. Using df.head() allows you to inspect the first few data points from the dataset. This is important to show you the column names so you can understand what information we are working with. Next, using df.info() will show you the amount of rows, columns and data types involved in the dataset.
+
+<img width="538" height="263" alt="Image" src="https://github.com/user-attachments/assets/8aee7a72-2bb8-437c-9faa-1fa81cbefd5a" />
 
 # Data-quality check
 The df.info() function used previously also shows that there is a missing data point located in the columns "name" and "class" and there are 2 missing data points in the column "gender". Before deleting the null value, you would need to know if the missing data points have been intentionally or accidentally excluded and if so, should this missing data be included to complete the records or should the records with null values be deleted.
