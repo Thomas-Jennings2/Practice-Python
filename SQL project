@@ -1,8 +1,8 @@
-SELECT industry_group, COUNT(DISTINCT company) AS num_companies, SUM(carbon_footprint_pcf) AS total_industry_footprint
+SELECT industry_group, COUNT(DISTINCT company) AS num_companies, ROUND(SUM(carbon_footprint_pcf),1) AS total_industry_footprint
 FROM public.product_emissions
-	WHERE product_emissions.year = 2017
+	WHERE year IN (SELECT MAX (year) FROM product_emissions)
 GROUP BY industry_group
 ORDER BY total_industry_footprint DESC;
 
 
-<img width="1137" height="465" alt="Image" src="https://github.com/user-attachments/assets/2d315403-6aa5-434b-9feb-9a28aa7fec02" />
+
