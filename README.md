@@ -70,9 +70,15 @@ Here, I changed the columns "name" and "mark" to "student" and "test_score".
 
 
 # Create a reusable output
-Exporting results is important because you can return the completed task and exclude lots of unnecessary data to make the results much more readable and understandable. Here I created a dataframe which removed all unnecessary data and just kept student name and mark. I then exported this condensed dataframe into a new csv file.
+Exporting results is important because you can return the completed task and exclude lots of unnecessary data to make the results much more readable and understandable. Here I created a dataframe which removed all unnecessary data and just kept student and test score. I then exported this condensed dataframe into a new csv file.
 
 student_test_scores_df = df[['student', 'test_score']] student_test_scores_df.to_csv('student_test_scores.csv', index=False)
 
 <img width="989" height="413" alt="image" src="https://github.com/user-attachments/assets/965d29d1-06c1-4e39-babb-df8e296f3275" />
+
+# Exporting Results
+Here I have created a dataframe with only the students that have passed and exported the condensed dataframe to a new csv file.
+
+<img width="815" height="431" alt="image" src="https://github.com/user-attachments/assets/7a3be883-4d33-4fcf-b53c-a8d8bec39d27" />
+
 
