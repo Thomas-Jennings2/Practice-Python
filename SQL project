@@ -1,0 +1,7 @@
+SELECT industry_group, COUNT(DISTINCT company) AS num_companies, SUM(carbon_footprint_pcf) AS total_industry_footprint
+FROM public.product_emissions
+GROUP BY industry_group
+ORDER BY total_industry_footprint DESC;
+
+
+<img width="1122" height="537" alt="Image" src="https://github.com/user-attachments/assets/b80bf264-86f2-4ee8-8f16-632c3d58e421" />
