@@ -5,9 +5,11 @@ This repository contains practice Python exercises and exploritory data analysis
 For this particular project, I used Google Colab to test my python code. In order to import the data into Colab, I used the syntax:
 
 from google.colab import files uploaded = files.upload()
+<img width="366" height="111" alt="image" src="https://github.com/user-attachments/assets/3885bc99-928f-49d0-9cee-24f59fdf35f3" />
 
-
+I imported Pandas as pd because I will need to use this to read the file into a dataframe
 I then used the following code in order to create a dataframe with this dataset df = pd.read_csv('student_python_task.csv')
+df is used as an alias to make it easy to reference and quicker to type.
 
 # Understand what you have been given
 Before starting any analysis, it is important to first look at the data to see what it involves. Using df.head() allows you to inspect the first few data points from the dataset. This is important to show you the column names so you can understand what information we are working with. Next, using df.info() will show you the amount of rows, columns and data types involved in the dataset.
